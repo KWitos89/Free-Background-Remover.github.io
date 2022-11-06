@@ -1,0 +1,49 @@
+.nav__btn {
+    position: relative;
+    color: var(--ff--white);
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: var(--fw600);
+    border-radius: .5rem;
+    transition: background .25s, color .25s, box-shadow .25s;
+    background-image: var(--linear-gradient--btn);
+    min-width: 7rem;
+}
+
+.nav__btn--primary{
+    position: relative;
+    color: var(--ff--white);
+    padding: .5rem 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: var(--fw600);
+    border-radius: .5rem;
+    transition: background .25s, color .25s, box-shadow .25s;
+    border-bottom: .001em solid var(--ff--white);
+    box-shadow: 0px 8px 10px -10px var(--ff--white);
+    background-image: inherit;
+
+
+    &:is(:hover,:active){
+        color: var(--fs-nav);
+        box-shadow: 0 0 10px var(--ff--white);
+    }
+}
+
+.nav__btn--secondary::after{
+    content: '';
+    position: absolute;
+    background-image: var(--linear-gradient--btn);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: 0.4;
+    transition: opacity .25s;
+}
+.nav__btn--secondary:is(:hover,:active)::after{
+        opacity: 1;
+}

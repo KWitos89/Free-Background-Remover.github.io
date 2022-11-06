@@ -1,0 +1,43 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--ff);
+    font-size: var(--fs-nav);
+    color: var(--ff-color);
+    height: 1000vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

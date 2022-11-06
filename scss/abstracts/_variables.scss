@@ -1,0 +1,27 @@
+:root {
+    --ff: 'Manrope', sans-serif;
+
+    --fw400: 400;
+    --fw500: 500;
+    --fw600: 600;
+    --fw700: 700;
+    --fw800: 800;
+
+    --fs-nav: clamp(1.125rem, 1vw, 2rem);
+    --fs-paragraph: clamp(1.125rem, 2vw, 1.3rem);
+    --fs-title: clamp(1.4rem, 4vw, 4.125rem);
+    --line-hight: clamp(30px, 50px, 76px);
+
+    --ff-color: rgba(166, 169, 184, 1);
+    --ff--white: #FFFFFF;
+
+    --gap-section: 7rem;
+    --gap: 2.625rem;
+    --grid-templets--columns: reapt(12, 1fr);
+
+    --linear-gradient--btn: linear-gradient(90deg, #FF4040 0%, #AC00FD 96.52%);
+    --linear-gradient--btn2: linear-gradient(90deg, #AC00FD 0%, #FF4040 96.52%);
+    --bg-color: #050718;
+    --bg--color--menu: #171820;
+
+}
