@@ -1,0 +1,39 @@
+.showcase{
+    padding-block: var(--gap-section);
+    display: grid;
+    row-gap: 3rem;
+    text-align: center;
+
+    &__boxImg{
+        margin-inline: auto;
+        width: 70%;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--gap);
+    }
+    &__title{
+        color: var(--ff);
+        font-weight: var(--fw800);
+        font-size: var(--fs-title);
+        line-height: var(--line-hight-mobile);
+    }
+
+    &__paragraph{
+        font-size: var(--fs-paragraph);
+        line-height:1.5rem;
+    }
+    &__paragraph--footer{
+        font-size: 1rem;
+    }
+
+    &__btn{
+        margin-inline: auto;
+    }
+
+
+
+   
+}

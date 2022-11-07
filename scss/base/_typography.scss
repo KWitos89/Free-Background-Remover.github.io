@@ -1,0 +1,9 @@
+.accent--title {
+    background-image: var(--linear-gradient--btn);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid;
+    border-image-source: var(--linear-gradient--btn);
+    border-image-slice: 1;
+    padding: .3rem;
+}
