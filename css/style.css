@@ -54,7 +54,6 @@ body {
   font-family: var(--ff);
   font-size: var(--fs-nav);
   color: var(--ff-color);
-  height: 1000vh;
 }
 
 html {
@@ -164,6 +163,9 @@ img {
 header {
   width: 100vw;
   position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header--active {
@@ -214,6 +216,9 @@ header {
        column-gap: var(--gap);
 }
 @media (min-width: 58em) {
+  .nav {
+    flex: auto;
+  }
   .nav__menu {
     padding-block: inherit;
     flex-direction: row;

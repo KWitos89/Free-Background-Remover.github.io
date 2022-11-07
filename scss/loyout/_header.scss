@@ -1,6 +1,9 @@
 header{
     width: 100vw;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header--active{
@@ -60,7 +63,7 @@ header{
 
 
     @media (min-width:58em){
-            
+            flex: auto;
         &__menu{
             padding-block: inherit;
             flex-direction: row;
@@ -70,6 +73,7 @@ header{
             box-shadow: inherit;
             justify-content: space-between;
             row-gap: inherit;
+            
         }
 
         &__list{
