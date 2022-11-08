@@ -1,0 +1,19 @@
+.steps {
+    padding-bottom: var(--gap-section);
+    display: grid;
+    row-gap: 4.3rem;
+
+
+    &__content {
+        text-align: center;
+        display: grid;
+        row-gap: var(--gap);
+    }
+
+    &__cards {
+        display: grid;
+        gap: var(--gap);
+        margin-inline: auto;
+    }
+
+}

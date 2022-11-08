@@ -1,0 +1,41 @@
+.steps__card {
+    background-color: var(--bg--color--menu);
+    display: grid;
+    grid-template-columns: max-content 260px 1fr;
+    align-items: center;
+    max-width: 370px;
+    column-gap: 1rem;
+    padding: 28px;
+    border-radius: 12px;
+
+    img {
+        width: 80%;
+        align-self: flex-start;
+        justify-self: left;
+
+    }
+
+    div {
+        grid-column: 2/ span 4;
+        display: grid;
+        row-gap: 1rem;
+
+        h4 {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 32px;
+            color: var(--ff);
+        }
+
+        p {
+            font-size: 1.100rem;
+            font-weight: 400;
+            line-height: 28px;
+            //  czy tak mozna nadawac sztywno wymiary zeby bylo jak w disagne? //
+            width: 260px;
+        }
+    }
+
+
+
+}
