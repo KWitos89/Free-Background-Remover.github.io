@@ -3,8 +3,10 @@
     padding-inline: 2rem;
     padding-top: 2.125rem;
 
-   
-    
+
+    @media (min-width:1000px){
+        padding-inline: 130px;
+    }
 }
 
 

@@ -1,11 +1,11 @@
 header {
-    width: 100vw;
     z-index: 998;
     transition: all .5s;
 
 }
 
 .header--active {
+    width: 100%;
     padding-block: 1rem;
     box-shadow: 10px 0 20px rgba(80, 80, 80, .3);
     position: fixed;
