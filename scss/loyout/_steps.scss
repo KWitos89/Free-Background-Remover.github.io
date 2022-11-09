@@ -8,12 +8,44 @@
         text-align: center;
         display: grid;
         row-gap: var(--gap);
+
     }
 
     &__cards {
         display: grid;
         gap: var(--gap);
         margin-inline: auto;
+    }
+
+
+    @media (min-width:40em) {
+        &__title {
+            margin-inline: auto;
+            width: 40%;
+        }
+
+        &__paragraph {
+            padding-inline: 7rem;
+        }
+
+        &__cards {
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+
+
+    }
+
+    @media (min-width:60em) {
+
+        &__cards {
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+
+
     }
 
 }
