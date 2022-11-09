@@ -69,6 +69,7 @@ img {
   margin-inline: auto;
   padding-inline: 2rem;
   padding-top: 2.125rem;
+  max-width: 1440px;
 }
 
 .body--overflow {
@@ -161,16 +162,21 @@ img {
 }
 
 header {
-  width: 100vw;
-  position: fixed;
+  z-index: 998;
+  transition: all 0.5s;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header--active {
-  padding-bottom: 1rem;
+  width: 100%;
+  padding-block: 1rem;
   box-shadow: 10px 0 20px rgba(80, 80, 80, 0.3);
+  position: fixed;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.9));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav {
@@ -189,14 +195,14 @@ header {
   top: -115rem;
   left: 0;
   width: 100%;
-  background-color: var(--bg--color);
   box-shadow: 0px 10px 10px rgba(80, 80, 80, 0.2);
   padding-block: 2rem;
-  transition: top 0.7s ease-in-out;
+  transition: top 0.7s ease-in-out, background-color 0.25s;
   z-index: 999;
 }
 .nav__menu--active {
-  top: 5rem;
+  top: 4.1rem;
+  background-color: var(--bg--color--menu);
 }
 .nav__list {
   display: flex;
@@ -217,14 +223,14 @@ header {
 }
 @media (min-width: 58em) {
   .nav {
-    flex: auto;
+    width: 100%;
   }
   .nav__menu {
     padding-block: inherit;
     flex-direction: row;
     position: relative;
     top: inherit;
-    left: inherit;
+    left: initial;
     box-shadow: inherit;
     justify-content: space-between;
     row-gap: inherit;
