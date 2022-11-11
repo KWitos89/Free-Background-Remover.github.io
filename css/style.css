@@ -402,4 +402,57 @@ header {
   .steps__card {
     grid-column: inherit;
   }
+}
+
+.remover {
+  text-align: center;
+  color: var(--ff);
+  margin-bottom: var(--gap-section);
+  display: grid;
+  row-gap: var(--gap);
+}
+.remover__title {
+  font-style: 42px;
+  font-weight: 800;
+  line-height: 42px;
+  max-width: 20rem;
+  margin-inline: auto;
+}
+.remover__box {
+  display: grid;
+  row-gap: 1.5rem;
+}
+.remover__boxImg {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 60%;
+  margin-inline: auto;
+}
+.remover__paragraph {
+  color: var(--ff-color);
+  font-size: var(--fs-paragraph);
+}
+@media (min-width: 40em) {
+  .remover__box {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 60em) {
+  .remover {
+    text-align: left;
+  }
+  .remover__title {
+    margin-inline: inherit;
+  }
+  .remover__box {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .remover__boxImg {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
