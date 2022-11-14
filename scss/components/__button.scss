@@ -10,7 +10,7 @@
     min-width: 7rem;
 }
 
-.nav__btn--primary{
+.nav__btn--primary {
     position: relative;
     color: var(--ff--white);
     padding: .5rem 1.5rem;
@@ -24,13 +24,13 @@
     background-image: inherit;
 
 
-    &:is(:hover,:active){
+    &:is(:hover, :active) {
         color: var(--fs-nav);
         box-shadow: 0 0 10px var(--ff--white);
     }
 }
 
-.nav__btn--secondary::after{
+.nav__btn--secondary::after {
     content: '';
     position: absolute;
     background-image: var(--linear-gradient--btn);
@@ -44,6 +44,7 @@
     opacity: 0.4;
     transition: opacity .25s;
 }
-.nav__btn--secondary:is(:hover,:active)::after{
-        opacity: 1;
+
+.nav__btn--secondary:is(:hover, :active)::after {
+    opacity: 1;
 }
