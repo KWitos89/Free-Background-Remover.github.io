@@ -243,7 +243,7 @@ header {
   transition: all 0.25s;
 }
 .nav__item:is(:hover, :active) {
-  color: var(--ff--white);
+  color: var(--ff);
   text-decoration: underline;
 }
 .nav__btnGroup {

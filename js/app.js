@@ -1,5 +1,5 @@
 const menu = document.querySelector('.nav__menu');
-const burgerBtn = document.querySelector('.nav__btn--open');
+const burgerBtn = document.querySelector('.nav__burgerBtn');
 const closeBtn = document.querySelector('.btn--close');
 const bodyEl = document.body;
 
@@ -37,6 +37,14 @@ const scrollHeader = () =>{
                        : headerEl.classList.remove('header--active')
 }
 
+
+
+const resizeMenu = () =>{
+    if(this.innerWidth >= 930)
+        closeMenu()
+}
+
+window.addEventListener('resize',resizeMenu);
 window.addEventListener('scroll',scrollHeader);
 burgerBtn.addEventListener('click',openMenu);
 document.addEventListener('mouseup',clickOutside);

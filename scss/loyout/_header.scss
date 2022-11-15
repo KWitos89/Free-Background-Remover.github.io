@@ -61,8 +61,8 @@ header {
         transition: all .25s;
 
 
-        &:is(:hover, :active) {
-            color: var(--ff--white);
+        &:is(:hover,:active) {
+            color: var(--ff);
             text-decoration: underline;
         }
     }
