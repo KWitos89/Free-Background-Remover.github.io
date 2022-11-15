@@ -15,3 +15,13 @@ p {
 a {
     font-size: var(--fs-nav);
 }
+.accent--title {
+    background-image: var(--linear-gradient--btn);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid;
+    border-image-source: var(--linear-gradient--btn);
+    border-image-slice: 1;
+    padding: .3rem;
+}
