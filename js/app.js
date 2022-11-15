@@ -33,7 +33,7 @@ const clickOutside = (e) => {
 }
 
 const scrollHeader = () =>{
-    this.scrollY >=50 ? headerEl.classList.add('header--active')
+    this.scrollY >=50 ? headerEl.classList.add('header--active')    
                        : headerEl.classList.remove('header--active')
 }
 

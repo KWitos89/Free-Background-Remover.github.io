@@ -1,0 +1,64 @@
+.steps {
+    padding-bottom: var(--gap-section);
+    display: grid;
+    row-gap: 4.3rem;
+
+    &__content {
+        text-align: center;
+        display: grid;
+        row-gap: var(--gap);
+        
+    }
+
+    &__title{
+        max-width: 18rem;
+        margin-inline: auto;
+        line-height: 42px;
+        color: var(--ff);
+    }
+    &__paragraph{
+        max-width: 36rem;
+        margin-inline: auto;
+        font-size: var(--fs-paragraph);
+        line-height: 30px;
+    }
+
+    &__cards {
+        display: grid;
+        gap: var(--gap);
+        width: 100%;
+        // grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+
+    }
+
+
+    @media (min-width:40em){
+
+      &__cards{
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      &__card{
+
+        &--one{
+            grid-column: span 2;
+        }
+        &--two{
+            grid-column: 3/ span 2;
+        }
+        &--three{
+            grid-column: 2/span 2;
+        }
+      }
+    }
+
+    @media (min-width:60em){
+        &__cards{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        &__card{
+            grid-column: inherit;
+        }
+    }
+}
