@@ -3,7 +3,11 @@
     padding-inline: 2rem;
     padding-top: 2.125rem;
 }
-
+.container--section {
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding-block: var(--gap-section);
+}
 .body--overflow {
     overflow: hidden;
 }

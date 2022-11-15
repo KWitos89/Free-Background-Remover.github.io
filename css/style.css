@@ -12,9 +12,8 @@
   --line-hight: clamp(30px, 50px, 76px);
   --ff-color: rgba(166, 169, 184, 1);
   --ff--white: #FFFFFF;
-  --gap-section: 7rem;
+  --gap-section: 3.5rem;
   --gap: 2.625rem;
-  --grid-templets--columns: reapt(12, 1fr);
   --linear-gradient--btn: linear-gradient(90deg, #FF4040 0%, #AC00FD 96.52%);
   --linear-gradient--btn2: linear-gradient(90deg, #AC00FD 0%, #FF4040 96.52%);
   --bg-color: #050718;
@@ -52,7 +51,6 @@ input {
 body {
   background-color: var(--bg-color);
   font-family: var(--ff);
-  font-size: var(--fs-nav);
   color: var(--ff-color);
 }
 
@@ -65,17 +63,41 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  color: var(--ff);
+  font-size: 2.625rem;
+  font-weight: var(--fw800);
+  line-height: 2.625rem;
+}
+
+p {
+  color: var(--ff-color);
+  font-size: var(--fs-paragraph);
+  font-weight: var(--fw400);
+  line-height: 2rem;
+}
+
+a {
+  font-size: var(--fs-nav);
+}
+
 .container {
   margin-inline: auto;
   padding-inline: 2rem;
   padding-top: 2.125rem;
 }
 
+.container--section {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-block: var(--gap-section);
+}
+
 .body--overflow {
   overflow: hidden;
 }
 
-.nav__btn {
+.btn {
   position: relative;
   color: var(--ff--white);
   padding: 0.5rem 1.5rem;
@@ -85,6 +107,25 @@ img {
   transition: background 0.25s, color 0.25s, box-shadow 0.25s;
   background-image: var(--linear-gradient--btn);
   min-width: 7rem;
+}
+
+.btn:not(.nav__btn--primary)::after {
+  content: "";
+  position: absolute;
+  background-image: var(--linear-gradient--btn);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0.4;
+  transition: opacity 0.25s;
+}
+
+.btn:is(:hover, :active)::after {
+  opacity: 1;
 }
 
 .nav__btn--primary {
@@ -103,25 +144,6 @@ img {
 .nav__btn--primary:is(:hover, :active) {
   color: var(--fs-nav);
   box-shadow: 0 0 10px var(--ff--white);
-}
-
-.nav__btn--secondary::after {
-  content: "";
-  position: absolute;
-  background-image: var(--linear-gradient--btn);
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-  filter: blur(15px);
-  z-index: -1;
-  opacity: 0.4;
-  transition: opacity 0.25s;
-}
-
-.nav__btn--secondary:is(:hover, :active)::after {
-  opacity: 1;
 }
 
 .nav__burgerBtn {
