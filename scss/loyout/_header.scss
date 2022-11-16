@@ -1,22 +1,17 @@
 header {
-    z-index: 998;
-    transition: all .5s;
+    transition: all .25s ease-in;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top:0;
 }
 
 .header--active {
-    position: fixed;
-    right: 0;
-    left: 0;
-    padding-top: 0;
-    padding-block: 1rem;
     background-color: #060816;
-    border-bottom: 1px solid #0f132f;
     box-shadow: 0px 20px 20px -20px #000000;
-    ;
-    z-index: 999;
 
 }
 
