@@ -1,0 +1,44 @@
+.tools{
+    background-color: var(--bg-color-menu);
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+
+    &__boxImg{
+        margin-inline: auto;
+        position: relative;
+        width: 350px;
+        height: 350px;
+        // overflow: hidden;
+    }
+
+    &__img{
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        opacity: 0;
+        transition: all .25s ease-in;
+        object-fit: cover;
+    }
+
+    .img--active{
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+
+    &__btnArrow{
+        color: var(--bg-color);
+        font-size: 2rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__arrow--left{
+        left: 1rem;
+    }
+    &__arrow--right{
+        right: 1rem;
+    }
+}

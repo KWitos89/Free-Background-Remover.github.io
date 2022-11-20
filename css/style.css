@@ -18,7 +18,7 @@
   --linear-gradient--btn: linear-gradient(90deg, #FF4040 0%, #AC00FD 96.52%);
   --linear-gradient--btn2: linear-gradient(90deg, #AC00FD 0%, #FF4040 96.52%);
   --bg-color: #050718;
-  --bg--color--menu: #171820;
+  --bg-color-menu: #171820;
 }
 
 *,
@@ -204,7 +204,7 @@ a {
 }
 
 .steps__card {
-  background-color: var(--bg--color--menu);
+  background-color: var(--bg-color-menu);
   display: grid;
   grid-template-columns: -webkit-max-content 1fr;
   grid-template-columns: max-content 1fr;
@@ -245,6 +245,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 999;
 }
 
 .header--active {
@@ -475,4 +476,44 @@ header {
   .remover__boxImg {
     width: 90%;
   }
+}
+
+.tools {
+  background-color: var(--bg-color-menu);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap);
+}
+.tools__boxImg {
+  margin-inline: auto;
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+.tools__img {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.tools .img--active {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+.tools__btnArrow {
+  color: var(--bg-color);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.tools__arrow--left {
+  left: 1rem;
+}
+.tools__arrow--right {
+  right: 1rem;
 }/*# sourceMappingURL=style.css.map */
