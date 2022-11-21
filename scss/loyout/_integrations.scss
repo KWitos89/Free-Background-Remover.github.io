@@ -1,0 +1,12 @@
+.integrations{
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap);
+    text-align: center;
+
+    &__cards{
+        display: grid;
+        row-gap: var(--gap);
+        margin-inline: auto;
+    }
+}

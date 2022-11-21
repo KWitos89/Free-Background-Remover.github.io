@@ -241,6 +241,35 @@ a {
   line-height: 28px;
 }
 
+.integrations__card {
+  background-color: var(--bg-color-menu);
+  box-shadow: 0px 20px 20px -20px #000000;
+  border-radius: 0.5rem;
+  display: grid;
+  row-gap: var(--gap);
+  text-align: center;
+  justify-content: center;
+  padding: 3rem 3.5rem;
+  max-width: 16.875rem;
+  transition: transform 0.25s, color 0.25s;
+  color: var(--ff);
+}
+.integrations__card:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: var(--ff-paragraph);
+}
+
+.integrations__card:hover .integrations__img {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+.integrations__img {
+  opacity: 0.5;
+  transition: all 0.25s 0.1s;
+}
+
 header {
   transition: all 0.25s ease-in;
   display: flex;
@@ -564,4 +593,16 @@ header {
     width: 31.25rem;
     height: 31.25rem;
   }
+}
+
+.integrations {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap);
+  text-align: center;
+}
+.integrations__cards {
+  display: grid;
+  row-gap: var(--gap);
+  margin-inline: auto;
 }/*# sourceMappingURL=style.css.map */
