@@ -1,12 +1,45 @@
-.integrations{
+.integrations {
     display: flex;
     flex-direction: column;
-    row-gap: var(--gap);
+    row-gap: 3rem;
     text-align: center;
 
-    &__cards{
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: var(--gap);
+    }
+
+    &__cards {
         display: grid;
         row-gap: var(--gap);
         margin-inline: auto;
+    }
+
+    @media (min-width:760px) {
+        &__title {
+            width: 30rem;
+            margin-inline: auto;
+        }
+
+        &__paragraph {
+            width: 32rem;
+            margin-inline: auto;
+        }
+
+        &__cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--gap);
+        }
+    }
+
+    @media (min-width:1024px) {
+
+        &__cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
     }
 }
