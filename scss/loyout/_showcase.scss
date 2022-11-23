@@ -13,6 +13,7 @@
     &__content {
         display: grid;
         row-gap: 1.5rem;
+        justify-content: center;
     }
 
     &__title {
@@ -20,11 +21,13 @@
         font-weight: var(--fw800);
         font-size: var(--fs-title);
         line-height: var(--line-hight-mobile);
+
     }
 
     &__paragraph {
         font-size: var(--fs-paragraph);
         line-height: 1.5rem;
+
     }
 
     &__paragraph--footer {
@@ -42,18 +45,28 @@
         }
     }
 
-    @media (min-width:42em) {
-        grid-auto-flow: column;
-        grid-auto-columns: 1fr;
+    @media (min-width:52em) {
+        grid-template-columns: 1fr 1fr;
         text-align: left;
-        column-gap: 2rem;
+        column-gap: var(--gap);
 
         &__boxImg {
             width: 100%;
+            display: grid;
+            justify-content: center;
+        }
+
+        &__content {
+            justify-content: center;
         }
 
         &__title {
             line-height: var(--line-hight);
+            width: 35rem;
+        }
+
+        &__paragraph {
+            width: 35rem;
         }
 
         &__btn {

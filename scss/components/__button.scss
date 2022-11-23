@@ -66,3 +66,20 @@
 .integrations__btn{
    padding-block: 1rem;
 }
+
+.about__btn{
+    padding: 1rem;
+    border: 2px solid;
+    border-image-source: var(--linear-gradient--btn);
+    border-image-slice: 1;
+
+    &--next{
+        background-image: var(--linear-gradient--btn);
+    }
+}
+
+.about__arrow{
+    font-size: 2rem;
+    color: var(--ff);
+    font-weight: 800;
+}

@@ -46,14 +46,15 @@ const showSlide = () => {
 
 const stopClickArrow = () => {
     if (number === 2) {
-        rightArrow.disabled = true
+        rightArrow.style.display = "none"
     } else if (number === 0) {
-        leftArrow.disabled = true
+        leftArrow.style.display = "none" 
     } else {
-        leftArrow.disabled = false
-        rightArrow.disabled = false
+        leftArrow.style.display = ""
+        rightArrow.style.display = ""
     }
 }
+
 
 const openMenu = (e) => {
     menu.classList.toggle('nav__menu--active');

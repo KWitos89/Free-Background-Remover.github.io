@@ -1,4 +1,4 @@
-.tools{
+.tools {
     background-color: var(--bg-color-menu);
     display: flex;
     flex-direction: column;
@@ -7,87 +7,93 @@
     justify-items: center;
     align-items: center;
 
-    &__content{
+    &__content {
         text-align: center;
         display: grid;
         row-gap: var(--gap);
     }
 
-    &__boxImg{
+    &__boxImg {
         margin-inline: auto;
         position: relative;
-        width: 20.875rem;
-        height: 20.875rem;
+        width: 18.875rem;
+        height: 18.875rem;
     }
 
-    &__img{
-        width: 20.875rem;
-        height: 20.875rem;
+    &__img {
+        width: 18.875rem;
+        height: 18.875rem;
         position: absolute;
         opacity: 0;
         transition: all .25s ease-in;
         object-fit: cover;
     }
 
-    .img--active{
+    .img--active {
         opacity: 1;
         transform: translateX(0);
         visibility: visible;
     }
 
 
-    &__btnArrow{
+    &__btnArrow {
         color: var(--bg-color);
         font-size: 2rem;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
     }
-    &__arrow--left{
+
+    &__arrow--left {
         left: 1rem;
     }
-    &__arrow--right{
+
+    &__arrow--right {
         right: 1rem;
     }
-    &__btn{
+
+    &__btn {
         z-index: 1;
     }
 
-    @media (min-width:47.5em){
-        &__content{
+    @media (min-width:47.5em) {
+        &__content {
             margin-inline: auto;
         }
-        &__title{
+
+        &__title {
             width: 35rem;
         }
-        &__pargaraph{
+
+        &__pargaraph {
             width: 37rem;
         }
-        &__boxImg{
+
+        &__boxImg {
             align-self: center;
         }
     }
 
-    @media(min-width:64em){
+    @media(min-width:64em) {
         flex-direction: row;
         column-gap: var(--gap);
-        
-        &__content{
+
+        &__content {
             text-align: left;
         }
 
-        &__btn{
+        &__btn {
             margin-inline: 0;
         }
     }
 
-    @media (min-width:81.25em){
-        &__boxImg{
+    @media (min-width:81.25em) {
+        &__boxImg {
             width: 31.25rem;
             height: 31.25rem;
         }
 
-        &__img{
+        &__img {
             width: 31.25rem;
             height: 31.25rem;
         }
