@@ -177,7 +177,7 @@ a {
 }
 
 .about__btn {
-  padding: 1rem;
+  padding: 0.6rem;
   border: 2px solid;
   border-image-source: var(--linear-gradient--btn);
   border-image-slice: 1;
@@ -293,13 +293,13 @@ a {
 .about__slideCard {
   background-color: var(--bg-color-menu);
   display: grid;
-  grid-template-rows: 1fr 1fr -webkit-max-content;
-  grid-template-rows: 1fr 1fr max-content;
-  gap: 0.6rem;
+  grid-template-rows: repeat(3, -webkit-max-content);
+  grid-template-rows: repeat(3, max-content);
+  gap: 1rem;
   padding: 3rem;
   max-width: 35.625rem;
-  height: 21.75rem;
   border-radius: 0.5rem;
+  box-shadow: 0px 20px 20px -20px #000000;
 }
 
 .about__person {
@@ -700,8 +700,8 @@ header {
 .about__action {
   position: absolute;
   right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: -4.5px;
+  z-index: -1;
 }
 .about__sliders {
   display: flex;

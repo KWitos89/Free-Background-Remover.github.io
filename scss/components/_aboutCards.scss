@@ -1,16 +1,16 @@
 .about__slideCard {
     background-color: var(--bg-color-menu);
     display: grid;
-    grid-template-rows: 1fr 1fr max-content;
-    gap: .6rem;
+    grid-template-rows: repeat(3, max-content);
+    gap: 1rem;
     padding: 3rem;
     max-width: 35.625rem;
-    height: 21.75rem;
     border-radius: .5rem;
+    box-shadow: 0px 20px 20px -20px #000000;
 }
 
 .about__person {
     grid-row: 1/2;
     display: flex;
-    column-gap:1rem; 
+    column-gap: 1rem;
 }
