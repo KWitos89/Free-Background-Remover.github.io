@@ -324,7 +324,7 @@ header {
 .header--active {
   background-color: #060816;
   box-shadow: 0px 20px 20px -20px #000000;
-  z-index: 1;
+  z-index: 3;
 }
 
 .nav {
@@ -352,7 +352,7 @@ header {
 .nav__menu--active {
   transform: translateY(0%);
   background-color: #060816;
-  z-index: -1;
+  z-index: 3;
   overflow: auto;
 }
 .nav__list {

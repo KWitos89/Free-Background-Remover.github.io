@@ -1,0 +1,29 @@
+.about{
+    display: grid;
+    row-gap: 3rem;
+
+    &__content{
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // &__title{
+    //     width: 30rem;
+    // }
+
+    &__action{
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);    
+    }
+    
+
+    &__sliders{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-inline: auto;
+    }
+}
