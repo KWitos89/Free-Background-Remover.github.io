@@ -15,20 +15,22 @@ const sliders = document.querySelectorAll('.tools__img');
 const btnNext = document.querySelector('.about__btn--next');
 const btnPrev = document.querySelector('.about__btn--prev');
 const aboutSliders = document.querySelector('.about__containerSliders');
-const aboutCards = document.querySelectorAll('.about__slideCard'); 
-const carouselMove = 458
+const aboutCards = document.querySelectorAll('.about__slideCard');
+let carouselMove = 100
 
 let card = 0
 
 const changeCard = () => {
-    if(card > aboutCards.length - 1){
+    if (card > aboutCards.length - 1) {
         card = 0
-    }else if (card < 0 ){
+    } else if (card < 0) {
         card = aboutCards.lengt - 1
     }
 
-    aboutSliders.style.transform = `translateX(${-card * carouselMove}px)`
+    aboutSliders.style.transform = `translateX(${-card * carouselMove }%)`
 }
+
+
 
 const nextCard = () => {
     card++
@@ -68,7 +70,7 @@ const prevSlide = () => {
 
 const showSlide = () => {
     sliders.forEach((slide, index) => {
-   
+
         if (index > number) {
             slide.classList.remove('img--active')
         } else {
@@ -83,7 +85,7 @@ const stopClickArrow = () => {
     if (number === 2) {
         rightArrow.style.display = "none"
     } else if (number === 0) {
-        leftArrow.style.display = "none" 
+        leftArrow.style.display = "none"
     } else {
         leftArrow.style.display = ""
         rightArrow.style.display = ""

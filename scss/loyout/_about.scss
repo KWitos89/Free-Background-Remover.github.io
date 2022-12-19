@@ -14,17 +14,15 @@
     }
 
     &__sliders{
-        margin-inline: auto;
-        width: 428px;
+        --iner:1;
         overflow: hidden;
-        transform: translateX(0px);
-       
+        max-width: 35.625rem;
+     
     }
 
     &__containerSliders{
         display: flex;
         column-gap: 2rem;
-        width: 100%;
          transition: all 1.25s ease-in-out;
     }
 
@@ -33,5 +31,7 @@
         max-width: fit-content;
         column-gap: .5rem;
     }
+
+   
 
 }
