@@ -14,18 +14,18 @@
     }
 
     &__sliders{
-        position: relative;
+        margin-inline: auto;
+        width: 428px;
         overflow: hidden;
-        height: 750px;
-        
+        transform: translateX(0px);
+       
     }
 
     &__containerSliders{
-        position: relative;
-        display: grid;
-        row-gap: 2rem;
-        transform: translateY(0px);
-        transition: 1s ease-in-out;        
+        display: flex;
+        column-gap: 2rem;
+        width: 100%;
+         transition: all 1.25s ease-in-out;
     }
 
     &__action{

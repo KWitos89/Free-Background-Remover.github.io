@@ -4,7 +4,8 @@
     grid-template-rows: repeat(3, max-content);
     gap: 1rem;
     padding: 3rem;
-    max-width: 35.625rem;
+    // max-width: 35.625rem;
+    min-width: 428px;
     border-radius: .5rem;
     box-shadow: 0px 20px 20px -20px #000000;
 }

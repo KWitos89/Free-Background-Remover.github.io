@@ -16,7 +16,7 @@ const btnNext = document.querySelector('.about__btn--next');
 const btnPrev = document.querySelector('.about__btn--prev');
 const aboutSliders = document.querySelector('.about__containerSliders');
 const aboutCards = document.querySelectorAll('.about__slideCard'); 
-const carouselMove = 385
+const carouselMove = 458
 
 let card = 0
 
@@ -27,7 +27,7 @@ const changeCard = () => {
         card = aboutCards.lengt - 1
     }
 
-    aboutSliders.style.transform = `translateY(${-card * carouselMove}px)`
+    aboutSliders.style.transform = `translateX(${-card * carouselMove}px)`
 }
 
 const nextCard = () => {
