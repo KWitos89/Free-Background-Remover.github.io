@@ -40,3 +40,12 @@ img {
     display: block;
     max-width: 100%;
 }
+
+body::-webkit-scrollbar {
+  width: .5em;
+}
+  
+body::-webkit-scrollbar-thumb {
+  background-image: var(--linear-gradient--btn);
+  border-radius: 12px;
+}
