@@ -2,24 +2,38 @@
     display: grid;
     row-gap: 3rem;
 
+    
+    &__title{
+        text-align: center;
+    }
+
     &__content{
         position: relative;
         align-items: center;
         justify-content: space-between;
     }
 
-    &__action{
-        position: absolute;
-        right: 1rem;
-        bottom: -4.5px;
-         z-index: -1;
-    }
-    
-
     &__sliders{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-inline: auto;
+        position: relative;
+        overflow: hidden;
+        height: 750px;
+        
     }
+
+    &__containerSliders{
+        position: relative;
+        display: grid;
+        row-gap: 2rem;
+        transform: translateY(0px);
+        transition: 1s ease-in-out;        
+    }
+
+    &__action{
+        display: flex;
+        max-width: fit-content;
+        column-gap: .5rem;
+    }
+
 }
+
+

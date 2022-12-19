@@ -67,19 +67,31 @@
    padding-block: 1rem;
 }
 
-.about__btn{
-    padding: .6rem;
-    border: 2px solid;
-    border-image-source: var(--linear-gradient--btn);
-    border-image-slice: 1;
 
-    &--next{
-        background-image: var(--linear-gradient--btn);
+.about__btn{
+    
+    border-radius: 50%;
+    border: 1px solid var(--ff-color);
+    box-shadow: 0px 10px 20px -5px #000 ;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease-in-out;
+
+    &:is(:hover,:active){
+        border: 2px solid var(--ff);
     }
 }
 
 .about__arrow{
     font-size: 2rem;
-    color: var(--ff);
     font-weight: 800;
+    color: var(--ff);
+    transition: all .25s ease-in-out;
+}
+
+.about__btn:hover .about__arrow{
+    color:var(--ff-color);
 }

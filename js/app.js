@@ -1,15 +1,50 @@
+// HAMBURGER MENU //
 const menu = document.querySelector('.nav__menu');
 const burgerBtn = document.querySelector('.nav__burgerBtn');
 const closeBtn = document.querySelector('.btn--close');
 const bodyEl = document.body;
 const headerEl = document.querySelector('.header');
 
-
+//  SECTION TOOLS SLIDERS //
 const leftArrow = document.querySelector('.tools__arrow--left');
 const rightArrow = document.querySelector('.tools__arrow--right')
-
 const boxImg = document.querySelectorAll('.tools__boxImg');
 const sliders = document.querySelectorAll('.tools__img');
+
+//  SECTION ABOUT SLIDERS //
+const btnNext = document.querySelector('.about__btn--next');
+const btnPrev = document.querySelector('.about__btn--prev');
+const aboutSliders = document.querySelector('.about__containerSliders');
+const aboutCards = document.querySelectorAll('.about__slideCard'); 
+const carouselMove = 385
+
+let card = 0
+
+const changeCard = () => {
+    if(card > aboutCards.length - 1){
+        card = 0
+    }else if (card < 0 ){
+        card = aboutCards.lengt - 1
+    }
+
+    aboutSliders.style.transform = `translateY(${-card * carouselMove}px)`
+}
+
+const nextCard = () => {
+    card++
+
+    changeCard()
+}
+
+const prevCard = () => {
+    card--
+
+    changeCard()
+}
+
+btnNext.addEventListener('click', nextCard);
+btnPrev.addEventListener('click', prevCard);
+
 
 let number = 1
 
