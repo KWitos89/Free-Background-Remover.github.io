@@ -720,15 +720,19 @@ header {
   justify-content: space-between;
 }
 .about__sliders {
-  --iner:1;
   overflow: hidden;
   max-width: 35.625rem;
+  width: 100%;
 }
 .about__containerSliders {
   display: flex;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
   transition: all 1.25s ease-in-out;
+}
+.about__slideCard {
+  margin-left: 16px;
+}
+.about__slideCard:nth-child(1) {
+  margin-left: 0;
 }
 .about__action {
   display: flex;

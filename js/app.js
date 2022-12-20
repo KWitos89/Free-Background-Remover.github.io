@@ -16,11 +16,12 @@ const btnNext = document.querySelector('.about__btn--next');
 const btnPrev = document.querySelector('.about__btn--prev');
 const aboutSliders = document.querySelector('.about__containerSliders');
 const aboutCards = document.querySelectorAll('.about__slideCard');
-let carouselMove = 100
+let carouselMove = 100 + 4
 
 let card = 0
 
 const changeCard = () => {
+
     if (card > aboutCards.length - 1) {
         card = 0
     } else if (card < 0) {

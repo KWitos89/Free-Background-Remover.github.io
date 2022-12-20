@@ -14,16 +14,25 @@
     }
 
     &__sliders{
-        --iner:1;
         overflow: hidden;
         max-width: 35.625rem;
-     
+        width: calc(100% / 1);
+
+
+       
     }
 
     &__containerSliders{
         display: flex;
-        column-gap: 2rem;
          transition: all 1.25s ease-in-out;
+    }
+
+    &__slideCard{
+        margin-left: 16px;
+    }
+
+    &__slideCard:nth-child(1){
+        margin-left: 0;
     }
 
     &__action{
